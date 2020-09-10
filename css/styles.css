@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+	background: #0062BE;
+	overflow: hidden;
+	font-family: 'Roboto', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px 20px 5px 50px;
+}
+
+.nav {
+	display: flex;
+	list-style: none;
+}
+
+
+.nav__item a {
+	display: inline-block;
+	color: #fff;
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 15px;
+	margin-right: 10px;
+	transition: transform 250ms ease-in-out,
+				text-shadow 250ms linear;
+}
+
+.nav__item a:hover {
+	transform: scale(1.2);
+	text-shadow: 0 5px 5px rgba(0,0,0, .8);
+}
+
+.logo {
+	width: 100px;
+	cursor: pointer;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+}
+
+.pepsi-bottle {
+	width: 200px;
+	position: absolute;
+	top: 20%;
+	right: 0;
+}
+
+.title {
+	font-size: 50px;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+	margin: 150px auto 25px auto;
+	text-align: center;
+}
+
+.description {
+	font-size: 18px;
+	color: #fff;
+
+}
+
+.title span {
+	font-size: 60px;
+	display: block;
+}
+
+.left {
+	width: 50%;
+}
+
+.sm {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 45%;
+	right: -90px;
+	z-index: 100;
+}
+
+.sm-link {
+	display: inline-block;
+	padding: 15px;
+	margin: 10px 0 0 0;
+	cursor: pointer;
+	transition: transform 500ms ease-in-out;
+}
+
+.sm-link:hover {
+	transform: rotateX(360deg) scale(1.5);
+}
+
+.sm-link i {
+	font-size: 20px;
+	color: #fff;
+}
